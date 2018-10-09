@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="keys">
+    <div data-key="a" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="s" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="d" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="f" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="g" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="h" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="j" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="k" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="l" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <span class="text">
+    Try different keys for the missing drum sounds!
+  </span>
+  
+  <div class="hidden-keys">
+    <div data-key="e" class="key hidden">
+      <kbd>E</kbd>
+      <span class="sound">engine</span>
+    </div>
+    <div data-key="r" class="key hidden">
+      <kbd>R</kbd>
+      <span class="sound">roar</span>
+    </div>
+    <div data-key="c" class="key hidden">
+      <kbd>C</kbd>
+      <span class="sound">chew</span>
+    </div>
+  </div>
+
+  <audio data-key="a" src="sounds/clap.wav"></audio>
+  <audio data-key="s" src="sounds/hihat.wav"></audio>
+  <audio data-key="d" src="sounds/kick.wav"></audio>
+  <audio data-key="f" src="sounds/openhat.wav"></audio>
+  <audio data-key="g" src="sounds/boom.wav"></audio>
+  <audio data-key="h" src="sounds/ride.wav"></audio>
+  <audio data-key="j" src="sounds/snare.wav"></audio>
+  <audio data-key="k" src="sounds/tom.wav"></audio>
+  <audio data-key="l" src="sounds/tink.wav"></audio>
+
+  <!-- hidden keys -->
+  <audio data-key="e" src="sounds/hidden/engine.wav"></audio>
+  <audio data-key="r" src="sounds/hidden/roar.wav"></audio>
+  <audio data-key="c" src="sounds/hidden/chew.wav"></audio>
+
+<script>
+  function playSound(e) {
+    const audio = document.querySelector(`audio[data-key=${e.key}]`);
+    if (!audio) return; // stop the function from running all together
+    audio.currentTime = 0; // rewind to the start
+    audio.play();
+
+    const key = document.querySelector(`.key[data-key=${e.key}]`);
+    if (key.classList.contains('hidden')) { 
+      key.style.visibility = 'visible';
+      setTimeout(function() {key.style.visibility = 'hidden'}, 700);
+    };
+    key.classList.add('playing');
+  }
+
+  function removeTransition(e) {
+    console.log(e);
+    if (e.propertyName !== 'transform') return; // skip it if it's not a transform
+    this.classList.remove('playing');
+  }
+
+  const keys = document.querySelectorAll('.key');
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+  const hiddenKeys = document.querySelectorAll('.hidden');
+  hiddenKeys.forEach(key => key.style.visibility = 'hidden');
+  
+  document.addEventListener('keydown', playSound);
+</script>
+
+</body>
+</html>
