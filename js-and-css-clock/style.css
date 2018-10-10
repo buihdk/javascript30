@@ -38,8 +38,6 @@ body {
 }
 
 .hand {
-  width: 50%;
-  height: 6px;
   position: absolute;
   top: 50%;
   transform-origin: right;
@@ -56,15 +54,17 @@ body {
 
 .minute-hand {  
   background: rgba(0,255,0,0.7); 
+  width: 40%; left: 10%; height: 8px;
 }
 
 .second-hand {  
   background: rgba(0,0,255,0.7); 
+  width: 50%; height: 6px;
 }
 
 .milisecond-hand { 
   background: rgba(0,0,0,0.1); 
-  width: 55%; transform-origin: 90%;
+  width: 55%; height: 5px; transform-origin: 90%;
 }
 
 .notransition { 
