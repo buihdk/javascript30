@@ -49,12 +49,12 @@ body {
 /* additional styling */
 .hour-hand { 
   background: rgba(255,0,0,0.7); 
-  width: 30%; left: 20%; height: 10px;
+  width: 35%; left: 15%; height: 10px;
 }
 
 .minute-hand {  
   background: rgba(0,255,0,0.7); 
-  width: 40%; left: 10%; height: 8px;
+  width: 45%; left: 5%; height: 8px;
 }
 
 .second-hand {  
