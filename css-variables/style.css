@@ -34,11 +34,9 @@ input { width: 100px; }
 
 .img-wrapper { position: relative; margin: 0 auto; text-align: center; }
 .cloud {
-  position: absolute;
-  z-index: 1;
-  opacity: 0.5;
+  position: absolute; z-index: 1; opacity: 0.5;
   animation: run 60s linear infinite;
-  background-image: url(https://www.undersky.com.au/wp-content/themes/undersky/images/clouds-small.png);
+  background-image: url('img/cloud.png');
   border-radius: var(--border);
 }
 @keyframes run { 0% { background-position: 0px; } 100% { background-position: -3000px;} }
