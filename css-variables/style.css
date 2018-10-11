@@ -1,0 +1,44 @@
+:root {
+  --base: #778899;
+  --spacing: 10px;
+  --blur: 0px;
+  --border: 50%;
+  box-sizing: border-box;
+}
+
+.hl {
+  color: var(--base);
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  border-radius: var(--border);
+}
+
+/*
+  misc styles, nothing to do with CSS variables
+*/
+
+body {
+  text-align: center;
+  background: #80A9D9;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 50px; 
+}
+.controls { margin-bottom: 50px; }
+input { width: 100px; }
+
+.img-wrapper { position: relative; margin: 0 auto; text-align: center; }
+.cloud {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  animation: run 60s linear infinite;
+  background-image: url(https://www.undersky.com.au/wp-content/themes/undersky/images/clouds-small.png);
+  border-radius: var(--border);
+}
+@keyframes run { 0% { background-position: 0px; } 100% { background-position: -3000px;} }
