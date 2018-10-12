@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
     handleCloud();
   }
+  inputs.forEach(input => input.addEventListener('change', handleUpdate));
   inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
 
   handleCloud();
