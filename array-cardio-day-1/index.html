@@ -64,17 +64,11 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-    console.log(data.reduce((obj, item) => {
-      if(!obj[item]) {
-        obj[item] = 0;
-      }
-      obj[item]++;
-      return obj;
-    }, {
-      car: 0,
-      walk: 0,
-      truck: 0
-    }))
+    console.log(data.reduce((accumulator, currentValue) => {
+      if(!accumulator[currentValue]) accumulator[currentValue] = 0;
+      accumulator[currentValue]++;
+      return accumulator;
+    }, { car: 0, walk: 0, truck: 0 }))
   </script>
 </body>
 </html>
