@@ -60,7 +60,7 @@ searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
 
 navigator.geolocation.getCurrentPosition((currentLocation) => {
-  alert('Fetching cities...')
+  alert('Fetching cities...');
   fetch('https://gist.githubusercontent.com/buihdk/43f3e361ec8a1e3208a46537a9529ee1/raw/7027f5708cc267e9b6ed6a5c6d237ca1c485a41f/cities.json')
   .then(blob => blob.json())
   .then(data => cities.push(...data))
@@ -69,6 +69,6 @@ navigator.geolocation.getCurrentPosition((currentLocation) => {
   .then(() => cities.sort((city1, city2) => {
     return (city1.difference > city2.difference) ? 1 : -1;
   }))
-  .then(() => alert('You can now start your searches...'))
+  .then(() => alert('You can now start your searches...'));
 });
 
