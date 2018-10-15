@@ -43,13 +43,13 @@
     console.log('ANSWER: ');
     console.log(comments.find(comment => comment.id === 823423));
     // Array.prototype.findIndex()
-    console.log('Find the comment with this ID');
+    console.log('Find the comment index with this ID');
     console.log('ANSWER: ');
     console.log(comments.findIndex(comment => comment.id === 823423));
     console.log('Delete the comment with the ID of 823423');
     console.log('ANSWER: ');
-    deletedCommentIndex = comments.findIndex(comment => comment.id === 823423);
-    let newComments = [...comments.slice(0,deletedCommentIndex), ...comments.slice(deletedCommentIndex + 1)];
+    const deletedCommentIndex = comments.findIndex(comment => comment.id === 823423);
+    const newComments = [...comments.slice(0,deletedCommentIndex), ...comments.slice(deletedCommentIndex + 1)];
     console.log(newComments);
   </script>
 </body>
