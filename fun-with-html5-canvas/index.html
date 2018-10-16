@@ -22,6 +22,7 @@
   <canvas id="draw" width="800" height="800"></canvas>
 
   <script>
+    const text = document.querySelector('span');
     const canvas = document.querySelector('#draw');
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
@@ -48,6 +49,8 @@
       if (ctx.lineWidth >= 75 || ctx.lineWidth <= 1) direction = !direction;
       if (direction) ctx.lineWidth++;
       else ctx.lineWidth--;
+      text.style.setProperty('color', `hsl(${hue}, 100%, 60%)`);
+      text.style.setProperty('border-color', `hsl(${hue}, 100%, 60%)`);
     }
     
     canvas.addEventListener('mousemove', draw);
