@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML5 Canvas</title>
+
   <style>
     html, body { margin: 0; box-sizing: border-box; background: black; }
     span { 
@@ -13,8 +14,10 @@
       user-select: none;
     }
   </style>
+
 </head>
 <body>
+  
   <span>HTML5 Canvas Fun!</span>
   <canvas id="draw" width="800" height="800"></canvas>
 
@@ -52,6 +55,6 @@
     canvas.addEventListener('mouseup', () => isDrawing = false);
     canvas.addEventListener('mouseout', () => isDrawing = false);
   </script>
-  
+
 </body>
 </html>
