@@ -11,3 +11,4 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 7: [Array Cardio Day 2](https://www.buihdk.com/javascript30/array-cardio-day-2/index.html)
 * Day 8: [Fun with HTML5 Canvas](https://www.buihdk.com/javascript30/fun-with-html5-canvas/index.html)
 * Day 9: [Dev Tools Domination](https://www.buihdk.com/javascript30/dev-tools-domination/index.html)
+* Day 10: [Hold Shift and Check Checkboxes](https://www.buihdk.com/javascript30/hold-shift-and-check-checkboxes/index.html)
