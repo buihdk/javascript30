@@ -16,8 +16,8 @@ function skip() { video.currentTime += parseFloat(this.dataset.skip) }
 function handleRangeUpdate() { video[this.name] = this.value; }
 function handleProgress() { progressBar.style.flexBasis = `${ (video.currentTime / video.duration) * 100 }%` }
 function scrub(e) { video.currentTime = (e.offsetX / progress.offsetWidth) * video.duration }
-
 function toggleFullScreen() {
+  if (video.requestFullscreen) video.requestFullscreen();
   if (video.webkitRequestFullscreen) video.webkitRequestFullscreen();
   if (video.mozRequestFullScreen) video.mozRequestFullScreen();
   if (video.msRequestFullscreen) video.msRequestFullscreen();
@@ -44,7 +44,6 @@ progress.addEventListener('mouseup', () => mousedown = false);
 
 screenButton.addEventListener('click', toggleFullScreen);
 document.addEventListener("keydown", (e) => {
-  console.log(e.key);
   switch(e.key) {
     case 'Enter': toggleFullScreen(); break;
     case ' ': togglePlay(); break;
