@@ -11,9 +11,9 @@ screenButton.innerHTML = '\u{2751}'
 
 // Build out functions
 function togglePlay() { video[video.paused ? 'play' : 'pause']() }
-function updateButton() { toggle.textContent = this.paused ? '►' : '❚ ❚'; }
+function updateButton() { toggle.textContent = this.paused ? '►' : '❚ ❚' }
 function skip() { video.currentTime += parseFloat(this.dataset.skip) }
-function handleRangeUpdate() { video[this.name] = this.value; }
+function handleRangeUpdate() { video[this.name] = this.value }
 function handleProgress() { progressBar.style.flexBasis = `${ (video.currentTime / video.duration) * 100 }%` }
 function scrub(e) { video.currentTime = (e.offsetX / progress.offsetWidth) * video.duration }
 function toggleFullScreen() {
@@ -49,6 +49,8 @@ document.addEventListener("keydown", (e) => {
     case ' ': togglePlay(); break;
     case 'ArrowRight': video.currentTime += parseFloat(15); break;
     case 'ArrowLeft': video.currentTime += parseFloat(-15); break;
+    case 'ArrowUp': if (video.volume <= 0.9) video.volume += 0.1; ranges[0].value = video.volume; break;
+    case 'ArrowDown': if (video.volume >= 0.1) video.volume -= 0.1; ranges[0].value = video.volume; break;
     default: break;
   }}
 );

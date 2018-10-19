@@ -170,10 +170,11 @@ input[type=range]::-moz-range-thumb {
 
 .text {
   display: flex;
-  max-width: 750px;
+  max-width: 640px;
   justify-content: center;
   font-size: rem;
   font-family: fantasy;
+  text-align: center;
   color: white;
   margin: 20px 0;
 }
