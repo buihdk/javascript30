@@ -13,3 +13,4 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 9: [Dev Tools Domination](https://www.buihdk.com/javascript30/dev-tools-domination/index.html)
 * Day 10: [Hold Shift and Check Checkboxes](https://www.buihdk.com/javascript30/hold-shift-and-check-checkboxes/index.html)
 * Day 11: [Custom Video Player](https://www.buihdk.com/javascript30/custom-video-player/index.html)
+* Day 12: [Key Sequence Detection](https://www.buihdk.com/javascript30/key-sequence-detection/index.html)

@@ -1,0 +1,37 @@
+body {
+  font-family: 'Kon System', 'Dynamic Serif Font';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+span {
+  color: white; 
+  background: red; 
+  padding: 0 12px;
+}
+.rainbow {
+  background: red;
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper { 
+  width: 100vw; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.hidden-text { 
+  font-size: 2rem; 
+  font-weight: 900;
+  transition: all .1s ease; 
+  visibility: hidden;
+  position: relative;
+  z-index: 2000; 
+}

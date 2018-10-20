@@ -7,7 +7,7 @@ function playSound(e) {
   const key = document.querySelector(`.key[data-key=${e.key}]`);
   if (key.classList.contains('hidden')) { 
     key.style.visibility = 'visible';
-    setTimeout(function() {key.style.visibility = 'hidden'}, 700);
+    setTimeout(() => { key.style.visibility = 'hidden' }, 700);
   };
   key.classList.add('playing');
 }
