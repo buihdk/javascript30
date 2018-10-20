@@ -1,5 +1,5 @@
-let cornify_count = 0;
-let cornify_add = function() {
+var cornify_count = 0;
+var cornify_add = function() {
 	cornify_count += 1;
 	var cornify_url = 'https://www.cornify.com/';
 	var div = document.createElement('div');
