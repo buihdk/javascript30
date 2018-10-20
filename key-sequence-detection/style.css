@@ -8,14 +8,14 @@ body {
 
 h1 {
   position: fixed;
-  top: 30px;
+  top: 20px;
   width: 100vw;
 }
 
 span {
   color: white; 
   background: red; 
-  padding: 0 12px;
+  padding: 0 6px;
 }
 
 .rainbow {
