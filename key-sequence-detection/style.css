@@ -5,11 +5,19 @@ body {
   padding: 0;
   text-align: center;
 }
+
+h1 {
+  position: fixed;
+  top: 10px;
+  width: 100vw;
+}
+
 span {
   color: white; 
   background: red; 
   padding: 0 12px;
 }
+
 .rainbow {
   background: red;
   background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
@@ -20,6 +28,7 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .wrapper { 
   width: 100vw; 
   height: 100vh; 
@@ -27,6 +36,7 @@ span {
   justify-content: center; 
   align-items: center; 
 }
+
 .hidden-text { 
   font-size: 2rem; 
   font-weight: 900;
