@@ -10,6 +10,7 @@ h1 {
   position: fixed;
   top: 20px;
   width: 100vw;
+  line-height: 1.5;
 }
 
 span {
