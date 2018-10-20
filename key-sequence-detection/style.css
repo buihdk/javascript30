@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: 'Kon System', 'Dynamic Serif Font';
   box-sizing: border-box;
   margin: 0;
@@ -6,14 +6,14 @@ body {
   text-align: center;
 }
 
-h1 {
+.title {
   position: fixed;
   top: 20px;
   width: 100vw;
   line-height: 1.5;
 }
 
-span {
+.konami {
   color: white; 
   background: red; 
   padding: 0 6px;
