@@ -15,4 +15,4 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 11: [Custom Video Player](https://www.buihdk.com/javascript30/custom-video-player/index.html)
 * Day 12: [Key Sequence Detection](https://www.buihdk.com/javascript30/key-sequence-detection/index.html)
 * Day 13: [Slide in on Scroll](https://www.buihdk.com/javascript30/slide-in-on-scroll/index.html)
-* Day 14: [References vs Copying](https://www.buihdk.com/javascript30/references-vs-copying/index.html)
+* Day 14: [JS Reference vs Copy](https://www.buihdk.com/javascript30/js-reference-vs-copy/index.html)
