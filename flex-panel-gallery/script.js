@@ -1,12 +1,9 @@
-function toggleOpen(e) {
-  // fix double-click and triple-click issue
-  if (!e.detail || e.detail == 1) this.classList.toggle('open');
-}
-
-function toggleActive(e) {
-  if (e.propertyName.includes('flex')) this.classList.toggle('open-active');
-}
+'use strict';
 
 const panels = document.querySelectorAll('.panel');
-panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+panels.forEach(panel => panel.addEventListener('click', (e) => {
+  if (!e.detail || e.detail == 1) panel.classList.toggle('open');
+}));
+panels.forEach(panel => panel.addEventListener('transitionend', (e) => {
+  if (e.propertyName.includes('flex')) panel.classList.toggle('open-active');
+}));

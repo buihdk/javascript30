@@ -1,3 +1,5 @@
+'use strict';
+
 const pressed = [];
 const konamiCode = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
 const hiddenText = document.querySelector('.hidden-text');

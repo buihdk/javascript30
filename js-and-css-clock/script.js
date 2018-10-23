@@ -1,9 +1,11 @@
+'use strict'; 
+
 const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.minute-hand');
 const hourHand = document.querySelector('.hour-hand');
 const milisecondHand = document.querySelector('.milisecond-hand');
 
-function setDate() {
+const setDate = () => {
   const now = new Date();
   // second hand
   const seconds = now.getSeconds();

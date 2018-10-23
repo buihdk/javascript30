@@ -1,3 +1,5 @@
+'use strict';
+
 var cornify_count = 0;
 var cornify_add = function() {
 	cornify_count += 1;
@@ -161,7 +163,7 @@ var cornify_replace = function() {
 	}
 };
 
-// KHOA: COMMENTED OUT THE BELOW TO STOP GENERATING UNEXPECTED BEHAVIORS!
+// @KHOA: COMMENTED OUT THE BELOW TO STOP GENERATING UNEXPECTED BEHAVIORS!
 
 // /*
 //  * Adapted from http://www.snaptortoise.com/konami-js/

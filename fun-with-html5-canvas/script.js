@@ -1,18 +1,23 @@
+'use strict';
+
 const text = document.querySelector('span');
+
 const canvas = document.querySelector('#draw');
-const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
+const ctx = canvas.getContext('2d');
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.globalCompositeOperation = 'luminosity';
+
 let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
 let hue = 0;
 let direction = true;
 
-function draw(e) {
+const draw = (e) => {
   if (!isDrawing) return; // stop the fn from running when they are not moused down
   ctx.strokeStyle = `hsl(${hue}, 100%, 60%)`;
   ctx.beginPath();

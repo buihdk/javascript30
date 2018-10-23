@@ -1,4 +1,6 @@
-function playSound(e) {
+'use strict';
+
+const playSound = (e) => {
   const audio = document.querySelector(`audio[data-key=${e.key}]`);
   if (!audio) return; // stop the function from running all together
   audio.currentTime = 0; // rewind to the start
@@ -12,13 +14,13 @@ function playSound(e) {
   key.classList.add('playing');
 }
 
-function removeTransition(e) {
-  if (e.propertyName !== 'transform') return; // skip it if it's not a transform
-  this.classList.remove('playing');
-}
-
 const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+// keys.forEach(key => key.addEventListener('transitionend', removeTransition(event, key)));
+
+keys.forEach(key => key.addEventListener('transitionend', () => {
+  if (event.propertyName !== 'transform') return; // skip it if it's not a transform
+  key.classList.remove('playing');
+}));
 
 const hiddenKeys = document.querySelectorAll('.hidden');
 hiddenKeys.forEach(key => key.style.visibility = 'hidden');

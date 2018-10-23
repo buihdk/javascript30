@@ -1,3 +1,5 @@
+'use strict';
+
 // start with strings, numbers and booleans
 let age = 39;
 let age2 = age;

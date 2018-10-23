@@ -1,3 +1,5 @@
+'use strict';
+
 // Get our elements
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
@@ -10,13 +12,13 @@ const screenButton = player.querySelector('.fullscreen');
 screenButton.innerHTML = '\u{2751}'
 
 // Build out functions
-function togglePlay() { video[video.paused ? 'play' : 'pause']() }
-function updateButton() { toggle.textContent = this.paused ? '►' : '❚ ❚' }
-function skip() { video.currentTime += parseFloat(this.dataset.skip) }
-function handleRangeUpdate() { video[this.name] = this.value }
-function handleProgress() { progressBar.style.flexBasis = `${ (video.currentTime / video.duration) * 100 }%` }
-function scrub(e) { video.currentTime = (e.offsetX / progress.offsetWidth) * video.duration }
-function toggleFullScreen() {
+const togglePlay = () => { video[video.paused ? 'play' : 'pause']() }
+const updateButton = () => { toggle.textContent = this.paused ? '►' : '❚ ❚' }
+const skip = () => { video.currentTime += parseFloat(this.dataset.skip) }
+const handleRangeUpdate = () => { video[this.name] = this.value }
+const handleProgress = () => { progressBar.style.flexBasis = `${ (video.currentTime / video.duration) * 100 }%` }
+const scrub = (e) => { video.currentTime = (e.offsetX / progress.offsetWidth) * video.duration }
+const toggleFullScreen = () => {
   if (video.requestFullscreen) video.requestFullscreen();
   if (video.webkitRequestFullscreen) video.webkitRequestFullscreen();
   if (video.mozRequestFullScreen) video.mozRequestFullScreen();

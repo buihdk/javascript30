@@ -1,4 +1,6 @@
-function findMatches(wordToMatch, cities) {
+'use strict';
+
+const findMatches = (wordToMatch, cities) => {
   return cities.filter(place => {
     // here we need to figure out if the city or state matches what was searched
     const regex = new RegExp(wordToMatch, 'gi');
@@ -6,18 +8,16 @@ function findMatches(wordToMatch, cities) {
   });
 }
 
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+const numberWithCommas = x => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-function displayMatches() { 
-  const matchArray = findMatches(this.value, cities);
+const displayMatches = (e) => { 
+  const matchArray = findMatches(e.target.value, cities);
   const html = matchArray.map(place => {
-    const regex = new RegExp(this.value, 'gi');
-    const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
+    const regex = new RegExp(e.target.value, 'gi');
+    const cityName = place.city.replace(regex, `<span class="hl">${e.target.value}</span>`);
     place.difference = place.difference.toString();
-    const nearestDistance = place.difference.replace(regex, `<span class="hl">${this.value}</span>`);
-    const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
+    const nearestDistance = place.difference.replace(regex, `<span class="hl">${e.target.value}</span>`);
+    const stateName = place.state.replace(regex, `<span class="hl">${e.target.value}</span>`);
     return `
       <li>
         <span class='name'>${cityName}, ${stateName}</span>
@@ -31,7 +31,7 @@ function displayMatches() {
   suggestions.innerHTML = html;
 }
 
-function pythagorasEquirectangular(lat1, lon1, lat2, lon2) {
+const pythagorasEquirectangular = (lat1, lon1, lat2, lon2) => {
   lat1 = lat1 * Math.PI / 180;
   lat2 = lat2 * Math.PI / 180;
   lon1 = lon1 * Math.PI / 180;
@@ -43,7 +43,7 @@ function pythagorasEquirectangular(lat1, lon1, lat2, lon2) {
   return distance;
 }
 
-function addDifference(latitude, longitude) {
+const addDifference = (latitude, longitude) => {
   for (let i = 0; i < cities.length; i++) {
     let difference = pythagorasEquirectangular(latitude, longitude, cities[i].latitude, cities[i].longitude);
     cities[i].difference = Math.round(difference);
@@ -71,4 +71,3 @@ navigator.geolocation.getCurrentPosition((currentLocation) => {
   }))
   .then(() => alert('You can now start your searches...'));
 });
-

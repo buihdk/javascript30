@@ -1,22 +1,23 @@
-function debounce(func, wait = 20, immediate = true) {
-  var timeout;
+'use strict';
+
+const debounce = (func, wait = 20, immediate = true) => {
+  let timeout;
   return function() {
-    var context = this, args = arguments;
-    var later = function() {
+    const context = this, args = arguments;
+    const later = function() {
       timeout = null;
       if (!immediate) func.apply(context, args);
     };
-    var callNow = immediate && !timeout;
+    let callNow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
-}
+};
 
 const sliderImages = document.querySelectorAll('.slide-in');
 
-function checkSlide(e) {
-  console.log(window.scrollY);
+const checkSlide = () => {
   sliderImages.forEach(sliderImage => {
     // distance from the windowTop to half way through the image
     const slideInAt = (window.scrollY + window.innerHeight) - (sliderImage.height / 2);
