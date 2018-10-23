@@ -1,0 +1,19 @@
+html, body { 
+  margin: 0; 
+  box-sizing: border-box; 
+  background: black; 
+}
+
+span { 
+  width: 50vw; 
+  color: white; 
+  border: 1px solid white;
+  display: flex; 
+  justify-content: center;
+  font-size: 4rem; 
+  font-family: fantasy;
+  position: absolute; 
+  top: 0%; 
+  left: 25%;
+  user-select: none;
+}
