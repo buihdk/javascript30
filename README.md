@@ -16,3 +16,5 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 12: [Key Sequence Detection](https://www.buihdk.com/javascript30/key-sequence-detection/index.html)
 * Day 13: [Slide in on Scroll](https://www.buihdk.com/javascript30/slide-in-on-scroll/index.html)
 * Day 14: [JS Reference vs Copy](https://www.buihdk.com/javascript30/js-reference-vs-copy/index.html)
+* Day 15: [Local Storage]
+(https://www.buihdk.com/javascript30/local-storage/index.html)
