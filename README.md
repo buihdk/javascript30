@@ -18,3 +18,4 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 14: [JS Reference vs Copy](https://www.buihdk.com/javascript30/js-reference-vs-copy/index.html)
 * Day 15: [Local Storage](https://www.buihdk.com/javascript30/local-storage/index.html)
 * Day 16: [Mouse Move Shadow](https://www.buihdk.com/javascript30/mouse-move-shadow/index.html)
+* Day 17: [Sort Without Articles](https://www.buihdk.com/javascript30/sort-without-articles/index.html)
