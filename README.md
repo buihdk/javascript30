@@ -7,7 +7,7 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 3: [CSS Variables and JS](https://www.buihdk.com/javascript30/css-variables-and-js/index.html)
 * Day 4: [Array Cardio Day 1](https://www.buihdk.com/javascript30/array-cardio-day-1/index.html)
 * Day 5: [Flex Panels Image Gallery](https://www.buihdk.com/javascript30/flex-panel-gallery/index.html)
-* Day 6: [Ajax Type Ahead (Current Location & Nearest Distance Detection)](https://www.buihdk.com/javascript30/ajax-type-ahead/index.html)
+* Day 6: [Ajax Type Ahead (Current Location & Nearest Distance)](https://www.buihdk.com/javascript30/ajax-type-ahead/index.html)
 * Day 7: [Array Cardio Day 2](https://www.buihdk.com/javascript30/array-cardio-day-2/index.html)
 * Day 8: [Fun with HTML5 Canvas](https://www.buihdk.com/javascript30/fun-with-html5-canvas/index.html)
 * Day 9: [14 Must Know Dev Tools Tricks](https://www.buihdk.com/javascript30/dev-tools-domination/index.html)
@@ -19,3 +19,4 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 15: [Local Storage and Event Delegation](https://www.buihdk.com/javascript30/local-storage/index.html)
 * Day 16: [CSS Text Shadow Mouse Move Effect](https://www.buihdk.com/javascript30/mouse-move-shadow/index.html)
 * Day 17: [Sorting Band Names without Articles](https://www.buihdk.com/javascript30/sort-without-articles/index.html)
+* Day 18: [Tally String Times with Reduce](https://www.buihdk.com/javascript30/tally-string-times-with-reduce/index.html)

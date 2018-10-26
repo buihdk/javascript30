@@ -1,0 +1,22 @@
+.column {
+  float: left;
+  width: 25%;
+}
+
+ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+button {
+  background-color: salmon;
+  color: white;
+  padding: 10px 50px;
+  margin: 0 auto;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+}
