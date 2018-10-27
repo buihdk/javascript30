@@ -1,14 +1,12 @@
 html {
   box-sizing: border-box;
+  font-size: 16px;
+  background: #2980B9;
+  background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 10px;
-  background: #ffc600;
+  box-sizing: border-box;
 }
 
 .photobooth {
