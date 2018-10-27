@@ -25,24 +25,24 @@ const populateListAndSetLocalStorage = (arr, htmlElement) => {
   localStorage.setItem('items', JSON.stringify(arr));
 }
 
-const addItem = () => {
-  event.preventDefault();
-  const text = (event.target.querySelector('[name=item]')).value;
+const addItem = (e) => {
+  e.preventDefault();
+  const text = (e.target.querySelector('[name=item]')).value;
   const item = { text, done: false };
   items.push(item);
   populateListAndSetLocalStorage(items, itemsList);
-  event.target.reset();
+  e.target.reset();
 };
 
-const toggleCheck = () => {
-  if (!event.target.matches('input')) return; // skip this unless it's an input
-  const index = event.target.dataset.index;
+const toggleCheck = (e) => {
+  if (!e.target.matches('input')) return; // skip this unless it's an input
+  const index = e.target.dataset.index;
   items[index].done = !items[index].done;
   populateListAndSetLocalStorage(items, itemsList);
 };
 
-const deleteItem = () => {
-  items.splice(event.target.id, 1);
+const deleteItem = (e) => {
+  items.splice(e.target.id, 1);
   populateListAndSetLocalStorage(items, itemsList);
 }
 

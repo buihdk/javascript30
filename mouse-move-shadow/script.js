@@ -4,15 +4,15 @@ const hero = document.querySelector('.hero');
 const text = hero.querySelector('h1');
 const walk = 500;
 
-const shadow = () => {
+const shadow = (e) => {
   // const width = hero.offsetWidth;
   // const height = hero.offsetHeight;
   const { offsetWidth: width, offsetHeight: height } = hero;
-  let { offsetX: x, offsetY: y } = event;
+  let { offsetX: x, offsetY: y } = e;
   
-  if (event.target !== hero) {
-    x += event.target.offsetLeft;
-    y += event.target.offsetTop;
+  if (e.target !== hero) {
+    x += e.target.offsetLeft;
+    y += e.target.offsetTop;
   }
   
   const xWalk = Math.round((x / width * walk) - (walk / 2));
