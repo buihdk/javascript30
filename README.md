@@ -7,7 +7,7 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 03: [ 🖼 CSS Variables and JS](https://www.buihdk.com/javascript30/css-variables-and-js/index.html)
 * Day 04: [ 🏃‍ Array Cardio Day 1](https://www.buihdk.com/javascript30/array-cardio-day-1/index.html)
 * Day 05: [ 🏞️ Flex Panels Image Gallery](https://www.buihdk.com/javascript30/flex-panel-gallery/index.html)
-* Day 06: [ 📍 Ajax Type Ahead (Current Location & Nearest Distance)](https://www.buihdk.com/javascript30/ajax-type-ahead/index.html)
+* Day 06: [ 📍 Ajax Current Location & Nearest Distance](https://www.buihdk.com/javascript30/ajax-type-ahead/index.html)
 * Day 07: [ 🏃‍ Array Cardio Day 2](https://www.buihdk.com/javascript30/array-cardio-day-2/index.html)
 * Day 08: [ 🎨 Fun with HTML5 Canvas](https://www.buihdk.com/javascript30/fun-with-html5-canvas/index.html)
 * Day 09: [ 🛠️ 14 Must Know Dev Tools Tricks](https://www.buihdk.com/javascript30/dev-tools-domination/index.html)
