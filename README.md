@@ -1,6 +1,6 @@
 # javascript30
 
-Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this together 
+*Use [Chrome](https://www.google.com/chrome/) for the best user experience:*
 
 * Day 01: [ 🥁 JavaScript Drum Kit](https://www.buihdk.com/javascript30/javascript-drum-kit/index.html)
 * Day 02: [ 🕒 CSS + JS Clock](https://www.buihdk.com/javascript30/js-and-css-clock/index.html)
@@ -22,3 +22,5 @@ Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this t
 * Day 18: [ 🕰️ Tally String Times with Reduce](https://www.buihdk.com/javascript30/tally-string-times-with-reduce/index.html)
 * Day 19: [ 💻 Browser Unreal Webcam Fun](https://www.buihdk.com/javascript30/browser-native-webcam-fun/index.html)
 * Day 20: [ 💬 Browser Speech Detection](https://www.buihdk.com/javascript30/browser-native-speech-detection/index.html)
+
+Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this together.
