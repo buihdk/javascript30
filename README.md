@@ -22,5 +22,6 @@
 * Day 18: [ 🕰️ Tally String Times with Reduce](https://www.buihdk.com/javascript30/tally-string-times-with-reduce/index.html)
 * Day 19: [ 💻 Browser Unreal Webcam Fun](https://www.buihdk.com/javascript30/browser-native-webcam-fun/index.html)
 * Day 20: [ 💬 Browser Speech Detection](https://www.buihdk.com/javascript30/browser-native-speech-detection/index.html)
+* Day 21: [ 📍 Geolocation based Speedometer and Compass](https://www.buihdk.com/javascript30/geolocation-speedometer-compass/README.md)
 
 Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this together.
