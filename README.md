@@ -1,5 +1,9 @@
 # javascript30
 
+### 30 Day Vanilla JS Coding Challenge. 
+
+> Build 30 things in 30 days with no frameworks, no compilers, no libraries, and no boilerplate.
+
 *Use [Chrome](https://www.google.com/chrome/) for the best user experience:*
 
 * Day 01: [ 🥁 JavaScript Drum Kit](https://www.buihdk.com/javascript30/javascript-drum-kit/index.html)
@@ -20,8 +24,8 @@
 * Day 16: [ 🖱️ CSS Text Shadow Mouse Move Effect](https://www.buihdk.com/javascript30/mouse-move-shadow/index.html)
 * Day 17: [ 📃 Sorting Band Names without Articles](https://www.buihdk.com/javascript30/sort-without-articles/index.html)
 * Day 18: [ 🕰️ Tally String Times with Reduce](https://www.buihdk.com/javascript30/tally-string-times-with-reduce/index.html)
-* Day 19: [ 💻 Browser Unreal Webcam Fun](https://www.buihdk.com/javascript30/browser-native-webcam-fun/index.html)
-* Day 20: [ 💬 Browser Speech Detection](https://www.buihdk.com/javascript30/browser-native-speech-detection/index.html)
+* Day 19: [ 💻 Browser Native Webcam Fun](https://www.buihdk.com/javascript30/browser-native-webcam-fun/index.html)
+* Day 20: [ 💬 Browser Native Speech Detection](https://www.buihdk.com/javascript30/browser-native-speech-detection/index.html)
 * Day 21: [ 📍 Geolocation based Speedometer and Compass](https://github.com/buihdk/javascript30/blob/master/geolocation-speedometer-compass/README.md)
 * Day 22: [ 🌟 Follow Along Link Highlighter](https://www.buihdk.com/javascript30/follow-along-link-highlighter/index.html)
 
