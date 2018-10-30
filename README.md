@@ -1,7 +1,5 @@
 # javascript30
 
-### 30 Day Vanilla JS Coding Challenge. 
-
 > Build 30 things in 30 days with no frameworks, no compilers, no libraries, and no boilerplate.
 
 *Use [Chrome](https://www.google.com/chrome/) for the best user experience:*
