@@ -4,7 +4,7 @@ const pressed = [];
 const konamiCode = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
 const hiddenText = document.querySelector('.hidden-text');
 
-window.addEventListener('keyup', (e) => {
+window.addEventListener('keyup', e => {
   pressed.push(e.key);
 
   if (pressed.length > 10) pressed.shift();

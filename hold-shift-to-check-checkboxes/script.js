@@ -3,7 +3,7 @@
 const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
 let lastChecked; 
 
-const handleCheck = (e) => {
+const handleCheck = e => {
   // check if they had the shift key down
   // AND check that they are checking it
   let inBetween = false;

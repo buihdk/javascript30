@@ -10,7 +10,7 @@ const findMatches = (wordToMatch, cities) => {
 
 const numberWithCommas = x => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-const displayMatches = (e) => { 
+const displayMatches = e => { 
   const matchArray = findMatches(e.target.value, cities);
   const html = matchArray.map(place => {
     const regex = new RegExp(e.target.value, 'gi');

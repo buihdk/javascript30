@@ -17,7 +17,7 @@ let lastY = 0;
 let hue = 0;
 let direction = true;
 
-const draw = (e) => {
+const draw = e => {
   if (!isDrawing) return; // stop the fn from running when they are not moused down
   ctx.strokeStyle = `hsl(${hue}, 100%, 60%)`;
   ctx.beginPath();
@@ -35,6 +35,6 @@ const draw = (e) => {
 }
 
 canvas.addEventListener('mousemove', draw);
-canvas.addEventListener('mousedown', (e) => { isDrawing = true; [lastX, lastY] = [e.offsetX, e.offsetY]; });
+canvas.addEventListener('mousedown', e => { isDrawing = true; [lastX, lastY] = [e.offsetX, e.offsetY]; });
 canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);

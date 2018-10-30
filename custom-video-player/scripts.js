@@ -17,7 +17,7 @@ const updateButton = () => { toggle.textContent = this.paused ? '►' : '❚ ❚
 const skip = () => { video.currentTime += parseFloat(this.dataset.skip) }
 const handleRangeUpdate = () => { video[this.name] = this.value }
 const handleProgress = () => { progressBar.style.flexBasis = `${ (video.currentTime / video.duration) * 100 }%` }
-const scrub = (e) => { video.currentTime = (e.offsetX / progress.offsetWidth) * video.duration }
+const scrub = e => { video.currentTime = (e.offsetX / progress.offsetWidth) * video.duration }
 const toggleFullScreen = () => {
   if (video.requestFullscreen) video.requestFullscreen();
   if (video.webkitRequestFullscreen) video.webkitRequestFullscreen();
@@ -40,12 +40,12 @@ ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
 
 let mousedown = false;
 progress.addEventListener('click', scrub);
-progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
+progress.addEventListener('mousemove', e => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
 
 screenButton.addEventListener('click', toggleFullScreen);
-document.addEventListener("keydown", (e) => {
+document.addEventListener("keydown", e => {
   switch(e.key) {
     case 'Enter': toggleFullScreen(); break;
     case ' ': togglePlay(); break;
