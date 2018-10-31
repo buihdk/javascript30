@@ -26,5 +26,6 @@
 * Day 20: [ 💬 Browser Native Speech Detection](https://www.buihdk.com/javascript30/browser-native-speech-detection/index.html)
 * Day 21: [ 📍 Geolocation based Speedometer and Compass](https://github.com/buihdk/javascript30/blob/master/geolocation-speedometer-compass/README.md)
 * Day 22: [ 🌟 Follow Along Link Highlighter](https://www.buihdk.com/javascript30/follow-along-link-highlighter/index.html)
+* Day 23: [ 🗣️ Browser Native Speech Synthesis](https://www.buihdk.com/javascript30/browser-native-speech-synthesis/index.html)
 
 Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this together.

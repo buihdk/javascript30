@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Synthesis</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="voiceinator">
+    <h1>The Voiceinator 5000</h1>
+
+    <select name="voice" id="voices">
+      <option value="">Select A Voice</option>
+    </select>
+
+    <label for="rate">Rate:</label>
+    <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+    <label for="pitch">Pitch:</label>
+    <input name="pitch" type="range" min="0" max="2" step="0.1">
+
+    <textarea name="text">
+      Hello! I 💗 JavaScript
+      JavaScript is awesome 👍. It's easy to learn partially, and much harder to learn completely (or even sufficiently) 💯. When developers encounter confusion, they usually blame the language 🈲 instead of their lack of understanding. These books 📚 aim to fix that, inspiring a strong appreciation for the language you can now, and should, deeply know.
+      Note 📝: Many of the examples in this book assume modern (and future-reaching JavaScript engine environments, such as ES6. Some code may not work as described if run in older (pre-ES6) engines.
+    </textarea>
+    <button id="stop">Stop!</button>
+    <button id="speak">Speak</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
