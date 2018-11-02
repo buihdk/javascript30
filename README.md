@@ -28,6 +28,6 @@
 * Day 22: [ 🌟 Follow Along Link Highlighter](https://www.buihdk.com/javascript30/follow-along-link-highlighter/index.html)
 * Day 23: [ 🗣️ Browser Native Speech Synthesis](https://www.buihdk.com/javascript30/browser-native-speech-synthesis/index.html)
 * Day 24: [ 🔖 Sticky Navbar](https://www.buihdk.com/javascript30/sticky-nav/index.html)
-* Day 25: [ 🔖 Sticky Navbar](https://www.buihdk.com/javascript30/event-capture-propagation-bubbling-and-once/index.html)
+* Day 25: [ 🔖 Sticky Navbar](https://www.buihdk.com/javascript30/event-capture-propagation-and-once/index.html)
 
 Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this together.
