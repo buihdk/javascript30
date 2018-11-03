@@ -29,5 +29,6 @@
 * Day 23: [ 🗣️ Browser Native Speech Synthesis](https://www.buihdk.com/javascript30/browser-native-speech-synthesis/index.html)
 * Day 24: [ 🔖 Sticky Navbar](https://www.buihdk.com/javascript30/sticky-nav/index.html)
 * Day 25: [ 💫 Event Capture, Propagation, and Once](https://www.buihdk.com/javascript30/event-capture-propagation-and-once/index.html)
+* Day 26: [ 🗂️ Stripe Follow Along Dropdown](https://www.buihdk.com/javascript30/stripe-follow-along-nav/index.html)
 
 Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this together.
