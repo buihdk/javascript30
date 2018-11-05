@@ -31,5 +31,6 @@
 * Day 25: [ 💫 Event Capture, Propagation, and Once](https://www.buihdk.com/javascript30/event-capture-propagation-and-once/index.html)
 * Day 26: [ 🗂️ Stripe Follow Along Dropdown](https://www.buihdk.com/javascript30/stripe-follow-along-nav/index.html)
 * Day 27: [ 🗺️ Click and Drag to Scroll](https://www.buihdk.com/javascript30/click-and-drag/index.html)
+* Day 28: [ 🎚️ Video Speed Slider](https://www.buihdk.com/javascript30/video-speed-slider/index.html)
 
 Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this together.
