@@ -1,3 +1,5 @@
+'use strict';
+
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
@@ -5,7 +7,6 @@ const timerDisplay = document.querySelector('.timer-display');
 let lastHole;
 let timeUp = true;
 let score = 0;
-let countdown;
 
 const randomTime = (min, max) => Math.round(Math.random() * (max - min) + min);
 
@@ -39,15 +40,14 @@ moles.forEach(mole => mole.addEventListener('click', bonk));
 const displayTimeLeft = (seconds) => timerDisplay.textContent = `${Math.floor(seconds / 60)}:${seconds % 60 < 10 ? '0' : ''}${seconds % 60}`;
 
 const timer = (seconds) => {
-  clearInterval(countdown);
   const now = Date.now();
   displayTimeLeft(seconds);
-
-  countdown = setInterval(() => {
+  const countdown = setInterval(() => {
     const secondsLeft = Math.round((now + seconds * 1000 - Date.now()) / 1000);
+    if (secondsLeft < 5) timerDisplay.style.color = 'red';
     if (secondsLeft < 0) {
-      clearInterval(countdown);
-      return;
+      timeUp = true;
+      return clearInterval(countdown);
     }
     displayTimeLeft(secondsLeft);
   }, 1000)
@@ -56,8 +56,8 @@ const timer = (seconds) => {
 const startGame = () => {
   scoreBoard.textContent = 0;
   score = 0;
+  timerDisplay.style.color = 'black';
   timeUp = false;
   peep();
-  setTimeout(() => timeUp = true, 15000);
   timer(15);
 };
