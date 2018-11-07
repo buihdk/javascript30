@@ -33,5 +33,6 @@
 * Day 27: [ 🗺️ Click and Drag to Scroll](https://www.buihdk.com/javascript30/click-and-drag/index.html)
 * Day 28: [ 🎚️ Video Speed Slider](https://www.buihdk.com/javascript30/video-speed-slider/index.html)
 * Day 29: [ ⏲ Countdown Timer](https://www.buihdk.com/javascript30/countdown-timer/index.html)
+* Day 30: [ 🐻 Whack a Mole Game](https://www.buihdk.com/javascript30/whack-a-mole/index.html)
 
 Thanks [Anastasia](https://github.com/AnastasiaVays) for pushing me to do this together.
